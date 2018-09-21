@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Ristek</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -24,10 +24,10 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="img/1.png"></section>
-				<section data-background="img/2.png"></section>
-				<section data-background="img/3.png"></section>
-				<section data-background="img/4.png"></section>
+				<section data-background-transition="zoom" data-background="img/1.png"></section>
+				<section data-background-transition="zoom" data-background="img/2.png"></section>
+				<section data-background-transition="concave" data-background="img/3.png"></section>
+				<section data-background-transition="concave" data-background="img/4.png"></section>
 			</div>
 		</div>
 
@@ -39,6 +39,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				transitionSpeed: 'slow',
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
@@ -46,6 +47,7 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+			
 		</script>
 	</body>
 </html>
